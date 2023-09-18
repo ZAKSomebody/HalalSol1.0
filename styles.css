@@ -29,13 +29,13 @@ body{
     flex-direction: row;
 }
 #S1,#S2,#S3,#S4{
-    width: 50px;
-    height: 50px;
+    width: 7vh;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 11px;
-    margin: 7px;
+    padding: 1.5vh;
+    margin: 1vh;
     border-radius: 100px;
 }
 #S1,#S4{
@@ -48,8 +48,8 @@ body{
     background-color: red;
 }
 #mail{
-    width: 25px;
-    height: 25px;
+    width: 3vh;
+    height: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
