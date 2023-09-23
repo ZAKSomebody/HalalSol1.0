@@ -9,14 +9,14 @@ img{
 }
 body{
     background-color: #030303ff;
-    color: #ffffffff;
+    color: #957fefff;
     font-family: "Audiowide", sans-serif;
 }
 .removeLine{
     text-decoration: none
 }
 #main{
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,13 +29,13 @@ body{
     flex-direction: row;
 }
 #S1,#S2,#S3,#S4{
-    width: 7vh;
-    height: 7vh;
+    width: 7dvh;
+    height: 7dvh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5vh;
-    margin: 1vh;
+    padding: 1.5dvh;
+    margin: 1dvh;
     border-radius: 100px;
 }
 #S1,#S4{
@@ -48,8 +48,8 @@ body{
     background-color: red;
 }
 #mail{
-    width: 3vh;
-    height: 3vh;
+    width: 3dvh;
+    height: 3dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,4 +63,40 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+.load{
+    height: 100dvh;
+    width: 50dvw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 11;
+    transition: all 0.7s;
+}
+.blu{
+    background-color: #7161efff;
+    left: 0;
+}
+.pur{
+    background-color: #957fefff;
+    right: 0;
+}
+/* .blu:hover{
+    width: 0;
+} */
+.start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 13;
+    background: linear-gradient(to top, #957fefff 50%, #7161efff 50%);
+    padding: 1rem;
+    border-radius: 50dvh;
+    color: #030303ff;
+    cursor: pointer;
+    overflow: hidden;
+}
+.start:hover{
+    border: #030303ff 3px solid;
 }
