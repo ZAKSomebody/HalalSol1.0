@@ -22,7 +22,7 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-#four{
+/* #four{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-}
+} */
 .load{
     height: 100dvh;
     width: 50dvw;
