@@ -9,13 +9,13 @@ img{
 }
 body{
     background-color: #030303ff;
-    color: #957fefff;
+    color: #f7f7f7ff;
     font-family: "Audiowide", sans-serif;
 }
 .removeLine{
     text-decoration: none
 }
-#main{
+#loading{
     min-height: 100dvh;
     display: flex;
     align-items: center;
@@ -96,4 +96,7 @@ body{
 }
 .start:hover{
     border: #030303ff 3px solid;
+}
+.main1{
+    display: grid;
 }
