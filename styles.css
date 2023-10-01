@@ -97,6 +97,6 @@ body{
 .start:hover{
     border: #030303ff 3px solid;
 }
-.main1{
+.all{
     display: grid;
 }
