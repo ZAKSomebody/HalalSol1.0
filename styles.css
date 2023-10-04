@@ -109,10 +109,10 @@ body{
     grid-auto-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(3,1fr);
-    /* padding: 100px; */
+    /* padding: 3rem; */
     margin: 5dvh 5dvw 5dvh 5dvw;
-    /* gap: 1em 1em; */
-    place-content: center;
+    gap: 1rem 1rem;
+    /* place-content: center; */
     place-items: center;
     text-align: center;
 }
@@ -123,5 +123,5 @@ body{
 }
 .copyright{
     /* place-self: center; */
-    grid-area: 3/3/3/3;
+    grid-area: 3/2;
 }
