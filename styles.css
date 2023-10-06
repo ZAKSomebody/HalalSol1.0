@@ -64,6 +64,19 @@ a{
 .start:hover{
     border: var(--clrBlack) 3px solid;
 }
+/*.ultra{
+    width: 100dvw;
+    /* width: calc(100dvw - 10dvh); 
+    height: 100dvh;
+    /* height: calc(100dvh - 10dvh); 
+    border: var(--clrBlue) 20px solid;
+    z-index: -111;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #00000000;
+}*/
 .all{
     width: 90dvw;
     height: 90dvh;
