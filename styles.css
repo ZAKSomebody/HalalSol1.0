@@ -133,7 +133,7 @@ a{
     place-content: center;
     /* text-align: center; */
 }
-.explore{
+/* .explore{
     border: var(--clrPurple) 3px solid;
     background-color: var(--clrPurple);
     color: var(--clrBlack);
@@ -145,29 +145,30 @@ a{
     transition: all 0.1s;
 }
 .explore:hover{
-    /* background-color: var(--clrPurple); */
     box-shadow: 0 0 11px 3px var(--clrBlack);
     border: var(--clrBlack) 3px solid;
     position: relative;
     bottom: 1px;
     right: 1px;
     cursor: pointer;
-}
-/* .explore{
-    background-color: var(--clrBlack);
-    color: var(--clrBlue);
+} */
+.explore{
+    background-color: var(--clrBlue);
+    color: var(--clrBlack);
     border-radius: 50px;
     width: fit-content;
     padding-left: 30px;
     padding-right: 30px;
     font-size: 1rem;
+    border: var(--clrBlack) 3px solid;
     transition: all 0.1s;
 }
 .explore:hover{
-    background-color: var(--clrBlue);
-    color: var(--clrBlack);
+    background-color: var(--clrBlack);
+    box-shadow: 0 0 11px 3px var(--clrBlack);
+    color: var(--clrBlue);
     cursor: pointer;
-} */
+}
 .illustrations{
     grid-area: 2/3;
     display: grid;
