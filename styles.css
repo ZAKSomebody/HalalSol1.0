@@ -1,15 +1,15 @@
 :root{
-    --clrBlue: #7161efff;
-    --clrPurple: #957fefff;
-    --clrBlack: #030303ff;
-    --clrWhite: #f7f7f7ff;
+    --clrBlue: rgb(113, 97, 239);
+    --clrPurple: rgb(149, 127, 239);
+    --clrBlack: rgb(3, 3, 3);
+    --clrWhite: rgb(247, 247, 247);
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-img{
+img,svg{
     max-width: 100%;
     max-height: 100%;
 }
@@ -17,7 +17,7 @@ body{
     background-color: var(--clrBlack);
     color: var(--clrWhite);
     font-family: "Audiowide", sans-serif;
-    /* box-shadow: inset 0 0 0 10px #000; */
+    /* box-shadow: inset 0 0 0 10px rgb(0,0,0); */
 }
 a{
     text-decoration: none
@@ -56,7 +56,7 @@ a{
     z-index: 13;
     background: linear-gradient(to top, var(--clrPurple) 50%, var(--clrBlue) 50%);
     padding: 1rem;
-    border-radius: 50dvh;
+    border-radius: 1111px;
     color: var(--clrBlack);
     cursor: pointer;
     overflow: hidden;
@@ -75,7 +75,7 @@ a{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    background-color: #00000000;
+    background-color: rgb(0,0,0);
 }*/
 .all{
     width: calc(100dvw - 5dvh);
@@ -112,7 +112,7 @@ a{
 }
 .navi div{
     background-color: var(--clrBlue);
-    width: 10vh;
+    width: 11dvh;
     aspect-ratio: 1;
     border-radius: 100%;
 }
@@ -183,7 +183,7 @@ a{
 }
 .illustrations div{
     background-color: var(--clrPurple);
-    width: 20vh;
+    width: 21dvh;
     aspect-ratio: 1;
     border-radius: 50px;
 }
@@ -202,7 +202,7 @@ a{
 }
 .socials div{
     background-color: var(--clrBlue);
-    width: 5vh;
+    width: 7dvh;
     aspect-ratio: 1;
     border-radius: 100%;
 }
@@ -227,4 +227,3 @@ a{
     border-radius: 100%;
     /* place-self: center; */
 }
-/* change vh and dvh of circles to rem */
