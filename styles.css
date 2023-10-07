@@ -153,6 +153,21 @@ a{
     right: 1px;
     cursor: pointer;
 }
+/* .explore{
+    background-color: var(--clrBlack);
+    color: var(--clrBlue);
+    border-radius: 50px;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1rem;
+    transition: all 0.1s;
+}
+.explore:hover{
+    background-color: var(--clrBlue);
+    color: var(--clrBlack);
+    cursor: pointer;
+} */
 .illustrations{
     grid-area: 2/3;
     display: grid;
