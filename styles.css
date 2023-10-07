@@ -78,8 +78,8 @@ a{
     background-color: #00000000;
 }*/
 .all{
-    width: 90dvw;
-    height: 90dvh;
+    width: calc(100dvw - 5dvh);
+    height: 95dvh;
     display: grid;
     /* grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr; */
@@ -88,11 +88,33 @@ a{
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(3,1fr);
     /* padding: 3rem; */
-    margin: 5dvh 5dvw 5dvh 5dvw;
+    margin: 2.5dvh;
     gap: 1rem 1rem;
     /* place-content: center; */
     place-items: center;
     text-align: center;
+}
+.logo{
+    padding: 2rem;
+}
+.navi{
+    grid-area: 1/3;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    /* padding: 3rem; */
+    margin: 1rem;
+    gap: 1rem 1rem;
+    /* place-content: center; */
+    place-items: center;
+    place-content: center;
+    text-align: center;
+}
+.navi div{
+    background-color: var(--clrBlue);
+    width: 10vh;
+    aspect-ratio: 1;
+    border-radius: 100%;
 }
 .motto{
     grid-area: 2/1/3/3;
@@ -100,24 +122,94 @@ a{
     flex-direction: column;
     place-items: center;
     font-size: 2.5rem;
-    /* place-self: center; */
+    background-color: var(--clrBlue);
+    color: var(--clrBlack);
+    /* background-color: color-mix(in oklab, var(--clrBlue), var(--clrWhite));
+    background: linear-gradient(to right, color-mix(in oklab, var(--clrBlue), var(--clrWhite)) 50%, color-mix(in oklab, var(--clrBlue), var(--clrBlack)) 50%); */
+    /* border: var(--clrPurple) 10px solid; */
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    place-content: center;
     /* text-align: center; */
 }
 .explore{
     border: var(--clrPurple) 3px solid;
-    background-color: var(--clrBlue);
+    background-color: var(--clrPurple);
     color: var(--clrBlack);
+    border-radius: 50px;
     width: fit-content;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 1rem;
     transition: all 0.1s;
 }
 .explore:hover{
-    background-color: var(--clrPurple);
+    /* background-color: var(--clrPurple); */
+    box-shadow: 0 0 11px 3px var(--clrBlack);
+    border: var(--clrBlack) 3px solid;
+    position: relative;
+    bottom: 1px;
+    right: 1px;
     cursor: pointer;
 }
-.copyright{
-    /* place-self: center; */
-    grid-area: 3/2;
+.illustrations{
+    grid-area: 2/3;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    /* padding: 3rem; */
+    margin: 1rem;
+    gap: 1rem 1rem;
+    /* place-content: center; */
+    place-items: center;
+    place-content: center;
+    text-align: center;
 }
+.illustrations div{
+    background-color: var(--clrPurple);
+    width: 20vh;
+    aspect-ratio: 1;
+    border-radius: 50px;
+}
+.socials{
+    grid-area: 3/1;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(7,1fr);
+    /* padding: 3rem; */
+    margin: 1rem;
+    gap: 1rem 1rem;
+    place-self: end start;
+    /* place-items: center;
+    place-content: center;
+    text-align: center; */
+}
+.socials div{
+    background-color: var(--clrBlue);
+    width: 5vh;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+.copyright{
+    grid-area: 3/2;
+    place-self: end center;
+}
+.arrows{
+    grid-area: 3/3;
+    /* padding: 1rem; */
+    display: flex;
+    place-content: center;
+    /* margin: 3rem; */
+    gap: 3rem;
+    /* width: 100%;
+    height: 100%; */
+}
+.arrows div{
+    background-color: var(--clrBlue);
+    width: 8dvh;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    /* place-self: center; */
+}
+/* change vh and dvh of circles to rem */
