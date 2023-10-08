@@ -122,6 +122,7 @@ a{
     flex-direction: column;
     place-items: center;
     font-size: 2.5rem;
+    gap: 0.5rem;
     background-color: var(--clrBlue);
     color: var(--clrBlack);
     /* background-color: color-mix(in oklab, var(--clrBlue), var(--clrWhite));
@@ -133,7 +134,7 @@ a{
     place-content: center;
     /* text-align: center; */
 }
-/* .explore{
+/* .LGTG{
     border: var(--clrPurple) 3px solid;
     background-color: var(--clrPurple);
     color: var(--clrBlack);
@@ -144,7 +145,7 @@ a{
     font-size: 1rem;
     transition: all 0.1s;
 }
-.explore:hover{
+.LGTG:hover{
     box-shadow: 0 0 11px 3px var(--clrBlack);
     border: var(--clrBlack) 3px solid;
     position: relative;
@@ -152,7 +153,7 @@ a{
     right: 1px;
     cursor: pointer;
 } */
-.explore{
+.LGTG{
     background-color: var(--clrBlue);
     color: var(--clrBlack);
     border-radius: 50px;
@@ -163,7 +164,7 @@ a{
     border: var(--clrBlack) 3px solid;
     transition: all 0.1s;
 }
-.explore:hover{
+.LGTG:hover{
     background-color: var(--clrBlack);
     box-shadow: 0 0 11px 3px var(--clrBlack);
     color: var(--clrBlue);
@@ -184,9 +185,13 @@ a{
 }
 .illustrations div{
     background-color: var(--clrPurple);
+    color: var(--clrBlack);
     width: 21dvh;
     aspect-ratio: 1;
     border-radius: 50px;
+    display: flex;
+    place-items: center;
+    place-content: center;
 }
 .socials{
     grid-area: 3/1;
