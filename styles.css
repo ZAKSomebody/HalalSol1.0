@@ -62,8 +62,9 @@ a{
     cursor: pointer;
     overflow: hidden;
 }
-.start:hover{
+.start:hover,.start:active{
     border: var(--clrBlack) 3px solid;
+    /* background: linear-gradient(to left, var(--clrPurple) 50%, var(--clrBlue) 50%); */
 }
 /*.ultra{
     width: 100dvw;
@@ -130,9 +131,10 @@ a{
     background: linear-gradient(to right, color-mix(in oklab, var(--clrBlue), var(--clrWhite)) 50%, color-mix(in oklab, var(--clrBlue), var(--clrBlack)) 50%); */
     /* border: var(--clrPurple) 10px solid; */
     border-radius: 50px;
-    width: 90%;
-    height: 90%;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
     place-content: center;
+    position: relative;
     /* text-align: center; */
 }
 /* .LGTG{
@@ -146,7 +148,7 @@ a{
     font-size: 1rem;
     transition: all 0.1s;
 }
-.LGTG:hover{
+.LGTG:hover,.LGTG:active{
     box-shadow: 0 0 11px 3px var(--clrBlack);
     border: var(--clrBlack) 3px solid;
     position: relative;
@@ -165,11 +167,45 @@ a{
     border: var(--clrBlack) 3px solid;
     transition: all 0.1s;
 }
-.LGTG:hover{
+.LGTG:hover,.LGTG:active{
     background-color: var(--clrBlack);
     box-shadow: 0 0 11px 3px var(--clrBlack);
     color: var(--clrBlue);
     cursor: pointer;
+}
+.threeDots{
+    background-color: var(--clrBlack);
+    width: 8%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 0.05em;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.circle{
+    cursor: pointer;
+    width: 0.3em;
+    aspect-ratio: 1;
+    background-color: var(--clrBlue);
+    border-radius: 100%;
+    transition: all 0.3s;
+}
+.threeDots:hover,
+.threeDots:active{
+    width: 10%;
+    /* border: var(--clrBlack) 3px solid;
+    background-color: var(--clrBlue); */
+}
+.threeDots:hover>.circle,
+.threeDots:active>.circle{
+    width: 0.4em;
+    /* background-color: var(--clrPurple); */
 }
 .illustrations{
     grid-area: 2/3;
@@ -183,8 +219,12 @@ a{
     place-items: center;
     place-content: center;
     text-align: center;
+    position: relative;
 }
-.illustrations div{
+.illus1,
+.illus2,
+.illus3,
+.illus4{
     background-color: var(--clrPurple);
     color: var(--clrBlack);
     width: 21dvh;
@@ -193,6 +233,34 @@ a{
     display: flex;
     place-items: center;
     place-content: center;
+    transition: all 0.3s;
+    position: absolute;
+    z-index: 1;
+}
+.illustrations div:hover{
+    width: 100%;
+    z-index: 21;
+    /* background-color: yellowgreen; */
+}
+.illus1{
+    top: 0;
+    left: 0;
+}
+.illus2{
+    top: 0;
+    right: 0;
+}
+.illus3{
+    bottom: 0;
+    left: 0;
+}
+.illus4{
+    bottom: 0;
+    right: 0;
+}
+.vanish{
+    visibility: hidden;
+    position: relative;
 }
 .socials{
     grid-area: 3/1/3/3;
@@ -203,15 +271,25 @@ a{
     margin: 1rem;
     gap: 1rem 1rem;
     place-self: end start;
+    position: relative;
     /* place-items: center;
     place-content: center;
     text-align: center; */
 }
-.socials div{
+.social{
     background-color: var(--clrBlue);
     width: 7dvh;
-    aspect-ratio: 1;
-    border-radius: 100%;
+    height: 7dvh;
+    border-radius: 1000px;
+    color: var(--clrBlack);
+    display: flex;
+    text-align: center;
+    place-content: center;
+    place-items: center;
+}
+.social:hover{
+    width: 100%;
+    position: absolute;
 }
 .copyright{
     grid-area: 3/2;
