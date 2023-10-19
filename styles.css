@@ -325,3 +325,29 @@ a{
         color: var(--clrPurple);
     }
 } */
+
+/* animation: LR 1s steps(2, jump-none) 0s infinite both;
+.illus1,
+.illus4{
+    animation-direction: alternate-reverse;
+}
+.illus2,
+.illus3{
+    animation-direction: alternate;
+}
+@keyframes upDown {
+    0%{
+        border-radius: 0 50px 0 50px;
+    }
+    100%{
+        border-radius: 50px 0 50px 0;
+    }
+}
+@keyframes LR {
+    0%{
+        border-radius: 50px 0 50px 0;
+    }
+    100%{
+        border-radius: 0 50px 0 50px;
+    }
+} */
