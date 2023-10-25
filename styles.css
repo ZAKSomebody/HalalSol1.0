@@ -164,7 +164,7 @@ a{
     cursor: pointer;
 } */
 .LGTG{
-    background-color: var(--clrBlue);
+    /* background-color: var(--clrBlue); */
     color: var(--clrBlack);
     border-radius: 50px;
     width: fit-content;
