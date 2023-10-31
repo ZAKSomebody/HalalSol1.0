@@ -96,6 +96,14 @@ a{
     place-items: center;
     text-align: center;
 }
+/* .lightMode{
+    grid-area: 1/1;
+    border-radius: 30%;
+    place-self: center start;
+    width: 10dvh;
+    height: 10dvh;
+    background-color: var(--clrWhite);
+} */
 .logo{
     grid-area: 1/1/1/3;
     /* padding: 2rem; */
