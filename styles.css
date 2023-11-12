@@ -288,6 +288,7 @@ a{
 }
 .vanish{
     visibility: hidden;
+    z-index: -11;
     position: relative;
 }
 .socials{
