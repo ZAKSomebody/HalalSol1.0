@@ -253,6 +253,21 @@ a{
     position: absolute;
     z-index: 1;
 }
+.illus1 > div:nth-child(1),
+.illus2 > div:nth-child(1),
+.illus3 > div:nth-child(1),
+.illus4 > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 0.3em;
+}
+.illus1 > div:nth-child(2),
+.illus2 > div:nth-child(2),
+.illus3 > div:nth-child(2),
+.illus4 > div:nth-child(2){
+    display: none;
+}
 .illus1,
 .illus4{
     border-radius: 50px 0 50px 0;
@@ -269,6 +284,14 @@ a{
     z-index: 21;
     border-radius: 50px;
     /* background-color: yellowgreen; */
+}
+.illustrations div:hover > div:nth-child(1),
+.illustrations div:active > div:nth-child(1){
+    display: none;
+}
+.illustrations div:hover > div:nth-child(2),
+.illustrations div:active > div:nth-child(2){
+    display: block;
 }
 .illus1{
     top: 0;
