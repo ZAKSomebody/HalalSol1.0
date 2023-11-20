@@ -41,7 +41,7 @@ a{
     top: 0;
     bottom: 0;
     z-index: 11;
-    transition: all 0.7s;
+    transition: all 0.7s cubic-bezier(.79,.14,.15,.86);
 }
 .blu{
     background-color: var(--clrBlue);
@@ -107,7 +107,7 @@ a{
     background-color: var(--clrWhite);
 } */
 .logo{
-    grid-area: 1/1/1/3;
+    grid-area: 1/2;
     /* padding: 2rem; */
     height: 11dvh;
 }
@@ -267,6 +267,10 @@ a{
 .illus3 > div:nth-child(2),
 .illus4 > div:nth-child(2){
     display: none;
+    text-align: start;
+    place-self: center;
+    place-content: center;
+    place-items: center;
 }
 .illus1,
 .illus4{
@@ -293,6 +297,14 @@ a{
 .illustrations div:active > div:nth-child(2){
     display: block;
 }
+.illustrations div:hover > div:nth-child(2):hover,
+.illustrations div:active > div:nth-child(2):active{
+    display: flex;
+    text-align: start;
+    place-self: center;
+    place-content: center;
+    place-items: center;
+}
 .illus1{
     top: 0;
     left: 0;
@@ -314,77 +326,83 @@ a{
     z-index: -11;
     position: relative;
 }
-.socials{
-    grid-area: 3/1;
+.socialsR{
     display: grid;
+    visibility: hidden;
     width: 20dvh;
     aspect-ratio: 1;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(3,1fr);
     gap: 0.5rem;
-    place-self: center start;
+    transition: 0.3s visibility 2s;
 }
-.social{
-    background-color: var(--clrPurple);
+.socialR{
+    background-color: var(--clrBlack);
     padding: 0.5rem;
     display: flex;
     place-content: center;
+    /* border: 3px solid var(--clrBlack); */
 }
-.social:nth-child(1){
+.socialR > svg{
+    fill: var(--clrBlue);
+}
+.socialR:nth-child(1){
     border-radius: 3dvh 0 3dvh 0;
     transform-origin: right bottom;
 }
-.social:nth-child(2){
+.socialR:nth-child(2){
     border-radius: 0 0 3dvh 3dvh;
     transform-origin: bottom;
 }
-.social:nth-child(3){
+.socialR:nth-child(3){
     border-radius: 0 3dvh 0 3dvh;
     transform-origin: left bottom;
 }
-.social:nth-child(4){
+.socialR:nth-child(4){
     border-radius: 0 3dvh 3dvh 0;
     transform-origin: right;
 }
-.social:nth-child(5){
+.socialR:nth-child(5){
     border-radius: 3dvh;
 }
-.social:nth-child(6){
+.socialR:nth-child(6){
     border-radius: 3dvh 0 0 3dvh;
     transform-origin: left;
 }
-.social:nth-child(7){
+.socialR:nth-child(7){
     border-radius: 0 3dvh 0 3dvh;
     transform-origin: right top;
 }
-.social:nth-child(8){
+.socialR:nth-child(8){
     border-radius: 3dvh 3dvh 0 0;
     transform-origin: top;
 }
-.social:nth-child(9){
+.socialR:nth-child(9){
     border-radius: 3dvh 0 3dvh 0;
     transform-origin: left top;
 }
-.social:hover,
-.social:active{
+.socialR:hover,
+.socialR:active{
     transform: scale(1.3,1.3);
     background-color: var(--clrBlue);
+    cursor: pointer;
 }
-/* .socials{
+.socials{
     grid-area: 3/1/3/3;
     display: grid;
     grid-template-rows: repeat(1,1fr);
     grid-template-columns: repeat(9,1fr);
-    /* padding: 3rem;
-    /* gap: 0.3rem;
+    /* padding: 3rem;*/
+    /* gap: 0.3rem;*/
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: 0;
+    translate: -50% 0%;
     place-self: end start;
-    /* position: relative;
+    /* position: relative;*/
     /* place-items: center;
     place-content: center;
-    text-align: center;
+    text-align: center;*/
 }
 .social{
     background-color: var(--clrBlue);
@@ -400,10 +418,11 @@ a{
 .social:hover,
 .social:active{
     transform: scale(1.3,1.3);
-} */
+    background-color: var(--clrPurple);
+}
 .copyright{
     grid-area: 3/2;
-    place-self: end center;
+    place-self: center;
 }
 .arrows{
     grid-area: 3/3;
@@ -436,6 +455,48 @@ a{
     border-top: 4dvh solid transparent;
     border-bottom: 4dvh solid transparent;
     border-left: 8dvh solid var(--clrPurple); */
+}
+.furtherSteps{
+    width: 70%;
+    height: 0%;
+    background-color: var(--clrBlue);
+    color: transparent;
+    border: 7px solid var(--clrBlack);
+    border-radius: 10dvh;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    translate: -50% -50%;
+    z-index: 111;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    transition: 0.7s left 0.1s,
+                1s height 0.8s,
+                0.3s color 2s;
+}
+.crossFurtherSteps{
+    visibility: hidden;
+    width: 5%;
+    aspect-ratio: 1;
+    background-color: var(--clrPurple);
+    border: 3px solid var(--clrBlack);
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    cursor: pointer;
+    transition: 0.3s visibility 2s;
+}
+.crossFurtherSteps > svg{
+    width: 1.5em;
+    aspect-ratio: 1;
+    cursor: pointer;
 }
 /* animation: upDown 1s linear 0s infinite alternate both;
 @keyframes upDown {
