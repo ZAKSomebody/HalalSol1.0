@@ -23,7 +23,8 @@ body{
     /* box-shadow: inset 0 0 0 10px rgb(0,0,0); */
 }
 a{
-    text-decoration: none
+    text-decoration: none;
+    cursor: pointer;
 }
 #loading{
     min-height: 100dvh;
@@ -405,6 +406,11 @@ a{
     /* place-items: center;
     place-content: center;
     text-align: center;*/
+    a{
+        width: 7dvh;
+        height: 7dvh;
+        border-radius: 1000px 1000px 0 0;
+    }
 }
 .social{
     background-color: var(--clrBlue);
@@ -416,6 +422,10 @@ a{
     display: flex;
     place-content: center;
     transform-origin: bottom;
+    cursor: pointer;
+    svg, path{
+        cursor: pointer;
+    }
 }
 .social:hover,
 .social:active{
@@ -494,11 +504,9 @@ a{
     place-content: center;
     cursor: pointer;
     transition: 0.3s visibility 2s;
-}
-.crossFurtherSteps > svg{
-    width: 1.5em;
-    aspect-ratio: 1;
-    cursor: pointer;
+    svg, path{
+        cursor: pointer;
+    }
 }
 /* animation: upDown 1s linear 0s infinite alternate both;
 @keyframes upDown {
